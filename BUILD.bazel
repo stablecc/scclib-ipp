@@ -1,0 +1,17 @@
+cc_library(
+	name = "importipplib",
+	srcs = [
+		"ipp.cc",
+	],
+	includes = [
+		"pub",
+	],
+	hdrs = [
+		"pub/scc/ipp.h",
+	],
+	copts = ["-std=c++17"],
+	deps = [
+		"@import_ipp//:extipplib"
+	],
+	visibility = ["//visibility:public"],
+)
