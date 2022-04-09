@@ -33,3 +33,4 @@ Original source:
 
 External and redistributable:
 * [ipp](lic/intel.txt)
+* [googletest](lic/google.txt)
