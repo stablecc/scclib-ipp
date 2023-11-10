@@ -31,10 +31,10 @@ IMPORT_IPP := 1
 
 # Expects libraries in /opt/intel
 
-BLDLIBS += $(BASE)/import/ipp
+BLDLIBS += $(BASE)/scclib-ipp
 
-CPPFLAGS += -isystem /opt/intel/ipp/include -isystem $(BASE)/import/ipp/pub
-SLIBS := -L /opt/intel/ipp/lib/intel64 -lippcore -lippi -lipps -lippvm -lippdc $(SLIBS)
+CPPFLAGS += -isystem /opt/intel/oneapi/ipp/latest/include -isystem $(BASE)/scclib-ipp/pub
+SLIBS := -L /opt/intel/oneapi/ipp/latest/lib/intel64 -lippcore -lippi -lipps -lippvm -lippdc $(SLIBS)
 
 ifeq ($(BLDTYPE),debug)
 SLIBS := -limportippd $(SLIBS)
