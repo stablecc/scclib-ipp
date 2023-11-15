@@ -33,7 +33,7 @@ IMPORT_IPP := 1
 
 BLDLIBS += $(BASE)/scclib-ipp
 
-CPPFLAGS += -isystem /opt/intel/oneapi/ipp/latest/include -isystem $(BASE)/scclib-ipp/pub
+CPPFLAGS += -isystem /opt/intel/oneapi/ipp/latest/include -I $(BASE)/scclib-ipp/pub
 SLIBS := -L /opt/intel/oneapi/ipp/latest/lib/intel64 -lippcore -lippi -lipps -lippvm -lippdc $(SLIBS)
 
 ifeq ($(BLDTYPE),debug)

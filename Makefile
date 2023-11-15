@@ -28,7 +28,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 BASE = ..
 
-CPPFLAGS += -isystem /opt/intel/oneapi/ipp/latest/include -isystem $(BASE)/scclib-ipp/pub
+CPPFLAGS += -isystem /opt/intel/oneapi/ipp/latest/include -I $(BASE)/scclib-ipp/pub
 
 NAME = importipp
 SRCS = ipp.cc
