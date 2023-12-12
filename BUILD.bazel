@@ -37,7 +37,7 @@ cc_library(
 	hdrs = [
 		"pub/scc/ipp.h",
 	],
-	copts = ["-std=c++17"],
+	copts = ["-std=c++20"],
 	deps = [
 		"@import_ipp//:extipplib"
 	],
